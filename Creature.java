@@ -7,7 +7,7 @@ import javax.imageio.*;
 public abstract class Creature extends JComponent {
     public int dir; // direction (left or right / up or down)
     private Rectangle hitbox;
-    private String label;
+    protected String label;
     public Creature(int x, int y){
         this.setLocation(x, y);
         dir = 1;

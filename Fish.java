@@ -6,6 +6,17 @@ public class Fish extends Creature{
         label = "Fish";
     }
 
+    @Override
+    public void move() {
+        
+        
+    }
+
+    @Override
+    public boolean eat(Creature c) {
+        return false;
+    }
+
 
 
 }

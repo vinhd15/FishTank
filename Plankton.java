@@ -17,7 +17,7 @@ public class Plankton extends Creature {
     class PlanktonMoveThread extends Thread{
         public volatile int count;
         public void run(){
-            while(count < 10 && x < getWidth() && y < getHeight()){
+            while(count < 10 && getX() < getWidth() && getY() < getHeight()){
                 try{
                     Thread.sleep(20);
                     setLocation(getX(), getY()+(10*dir));

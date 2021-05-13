@@ -12,7 +12,7 @@ public class SimulationPanel extends JPanel {
     public SimulationPanel(){
         super();
         this.setPreferredSize(new Dimension(1920, 1000));
-        simulation = new Simulation(0, 1, 0);
+        simulation = new Simulation(0, 1, 0, this);
     }
 
     protected void paintComponent(Graphics g){

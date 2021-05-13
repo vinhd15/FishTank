@@ -15,7 +15,7 @@ public class Guppy extends Fish{
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
-        BufferedImnage guppy = null;
+        BufferedImage guppy = null;
         try {
             guppy = ImageIO.read(new File("guppy.png"));
             
